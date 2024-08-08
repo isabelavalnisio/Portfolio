@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #252525;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f3f3f3;
+}
+
+.header_navbar {
+    width: 100%;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.hn_wrap {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 0.3s ease-in-out;
+}
+
+.hn_wrap.navbarActive {
+    top: 10px;
+    border: 2px solid #252525;
+    box-shadow: 4px 4px #252525;
+    padding: 0 15px;
+    background-color: #f3f3f3;
+}
+
+.hn_logo {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #252525;
+}
+
+.hn_logo>h1 {
+    font-weight: 700;
+}
+
+.hn_logo>img {
+    width: 40px;
+}
+
+.nav_menu {
+    grid-column: 2/4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav_menu>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_menu>ul>li {
+    list-style: none;
+    border-left: 1px solid #7f8084;
+    border-right: 1px solid #7f8084;
+    padding: 0 8px;
+}
+
+.nav_menu>ul>li>a {
+    font-size: 14px;
+    color: #252525;
+    transition: 0.3s linear;
+    position: relative;
+}
+
+.nav_menu>ul>li>a.activeNH {
+    background-color: #252525;
+    color: #f3f3f3;
+    padding: 3px 10px;
+    font-weight: 600;
+}
+
+.nav_menu>ul>li>a:hover {
+    border-bottom: 1px solid #7f8084;
+    padding: 3px 10px;
+}
+
+.firstSection {
+    width: 100%;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* This makes the image move to the right */
+    overflow: hidden;
+    padding-top: 1px;
+    /* Ensure content is not hidden behind navbar */
+}
+
+
+
+#particles-js>canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.fsTextWrap {
+    z-index: 10;
+    color: #252525;
+    text-align: center;
+}
+
+.fsTextWrap>h1,
+.fsTextWrap>h3 {
+    margin-bottom: 20px;
+}
+
+.fsTextWrap>p {
+    width: 450px;
+    font-size: clamp(0.75rem, 0.6464rem + 0.5525vw, 1rem);
+    letter-spacing: 0.05em;
+}
+
+.fswrap {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fstyping {
+    width: 459px;
+    display: flex;
+    gap: 5px;
+    justify-content: right;
+}
+
+.fsTextType {
+    position: relative;
+    color: #252525;
+    font-size: 30px;
+}
+
+.fsTextType.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;;
+    border-left: 10px solid #252525;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.fsIMGCon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 20;
+}
+
+.fsimgWrap img {
+    max-width: 100%;
+    height: auto;
+    max-width: 450px;
+    padding-left: 100px;
+    object-fit: contain;
+    z-index: 20;
+    position: relative;
+}
+
+.fsimwrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 11;
+}
+
+.fsimwrap>img {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+}
+
+.fsSMCon {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.fsSMCon>a {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.fsSMCon>a:hover {
+    border: 2px solid #252525;
+    box-shadow: 4px 4px #252525;
+    background-color: #f3f3f3;
+}
+
+footer {
+    text-align: center;
+    padding: 150px;
+    background-color: #ffffff;
+    color: #474646;
+    position: relative;
+    z-index: 2;
+}
+
+footer hr {
+    border: 1px solid #636262;
+    width: 80%;
+    margin: 20px auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 8px;
+}
+
+footer a {
+    color: #303030;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#dcvbtn {
+    padding: 0 16px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #252525;
+    color: #252525;
+    background-color: #f3f3f3;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+#dcvbtn:hover {
+    box-shadow: 4px 4px #252525;
+}
