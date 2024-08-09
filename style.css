@@ -384,14 +384,11 @@ footer a:hover {
 
 @media only screen and (max-width: 920px) {
     .header_navbar {
-        padding: 0 30px;
+        padding: 10 10px;
         height: 70px;
         display: flex;
-        /* Add this */
         justify-content: center;
-        /* Add this */
         align-items: center;
-        /* Add this */
     }
 
     .hn_wrap {
@@ -399,7 +396,7 @@ footer a:hover {
         grid-template-columns: 1fr 1fr;
         text-align: center;
         font-size: 6.5px;
-        gap: 10px;
+        gap: 50px;
         justify-content: center;
         align-items: center;
     }
