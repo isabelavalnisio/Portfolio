@@ -384,7 +384,6 @@ footer a:hover {
 
 @media only screen and (max-width: 920px) {
     .header_navbar {
-        padding: 10 10px;
         height: 70px;
         display: flex;
         justify-content: center;
@@ -409,6 +408,7 @@ footer a:hover {
     .nav_menu ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 5px;
     }
 
     .nav_menu>ul>li>a {
