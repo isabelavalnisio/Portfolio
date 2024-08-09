@@ -226,6 +226,7 @@ body {
     gap: 15px;
     margin-top: 20px;
     justify-content: center;
+    z-index: 20;
 }
 
 .fsSMCon>a {
@@ -237,6 +238,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: 0.3s ease-in-out;
+    z-index: 20;
 }
 
 .fsSMCon>a:hover {
@@ -244,6 +246,7 @@ body {
     box-shadow: 4px 4px #252525;
     background-color: #f3f3f3;
 }
+
 
 footer {
     text-align: center;
@@ -286,6 +289,10 @@ footer a:hover {
     cursor: pointer;
     margin-top: 15px;
     transition: 0.3s ease-in-out;
+    position: relative;
+    /* Ensures z-index works */
+    z-index: 20;
+    /* Places the button on top */
 }
 
 #dcvbtn:hover {
