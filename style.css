@@ -113,7 +113,8 @@ body {
 
 .firstSection {
     width: 100%;
-    height: 670px;
+    height: auto;
+    /* Changed from fixed height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,6 +133,8 @@ body {
     z-index: 10;
     color: #252525;
     text-align: center;
+    padding: 20px;
+    /* Add padding to avoid text getting cut off */
 }
 
 .fsTextWrap>h1,
@@ -140,7 +143,8 @@ body {
 }
 
 .fsTextWrap>p {
-    width: 450px;
+    width: 100%;
+    /* Ensure full width */
     font-size: clamp(0.75rem, 0.6464rem + 0.5525vw, 1rem);
     letter-spacing: 0.05em;
 }
@@ -153,16 +157,19 @@ body {
 }
 
 .fstyping {
-    width: 459px;
+    width: 100%;
+    /* Ensure it uses full width on smaller screens */
     display: flex;
     gap: 5px;
-    justify-content: right;
+    justify-content: center;
+    /* Center the typing text */
 }
 
 .fsTextType {
     position: relative;
     color: #252525;
-    font-size: 30px;
+    font-size: 2rem;
+    /* Adjusted size for smaller screens */
 }
 
 .fsTextType.sec-text:before {
@@ -193,7 +200,8 @@ body {
 .fsIMGCon {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    /* Center the image */
     position: relative;
     z-index: 20;
 }
@@ -201,8 +209,8 @@ body {
 .fsimgWrap img {
     max-width: 100%;
     height: auto;
-    max-width: 450px;
-    padding-left: 100px;
+    max-width: 350px;
+    /* Adjusted size for better fit */
     object-fit: contain;
     z-index: 20;
     position: relative;
@@ -249,7 +257,8 @@ body {
 
 footer {
     text-align: center;
-    padding: 150px;
+    padding: 50px;
+    /* Adjusted for smaller screens */
     background-color: #ffffff;
     color: #474646;
     position: relative;
@@ -299,7 +308,8 @@ footer a:hover {
 /* Responsive Design */
 @media only screen and (max-width: 800px) {
     .header_navbar {
-        padding: 0 20px;
+        padding: 0 10px;
+        height: 140px;
     }
 
     .hn_wrap {
@@ -329,7 +339,9 @@ footer a:hover {
 
     .fsimgWrap img {
         padding-left: 0;
-        width: 100%;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
     }
 
     .fsTextType {
@@ -339,8 +351,12 @@ footer a:hover {
     .fsTextWrap>p {
         width: 100%;
     }
+    
+    .buttonCV {
+        text-align: center;
+    }
 
     footer {
-        padding: 50px;
+        padding: 15px;
     }
 }
