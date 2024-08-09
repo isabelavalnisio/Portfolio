@@ -319,14 +319,14 @@ footer a:hover {
 
 @media only screen and (max-width: 920px) {
     .header_navbar {
-        padding: 0 10px;
+        padding: 0 8px;
         height: 70px;
     }
 
     .hn_wrap {
         grid-template-columns: 1fr;
         text-align: center;
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .nav_menu {
