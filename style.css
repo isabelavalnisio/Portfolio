@@ -31,7 +31,7 @@ body {
     width: 100%;
     padding: 0 50px;
     position: sticky;
-    background-color: #fafafa;
+    background-color: #ffffff;
     top: 0;
     z-index: 999;
 }
@@ -55,7 +55,7 @@ body {
 
 .hn_logo {
     height: 100%;
-    width: fit-content;
+    width:max-content;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -75,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding-top: 5px;
     gap: 20px;
 }
@@ -306,7 +306,7 @@ footer a:hover {
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 920px) {
     .header_navbar {
         padding: 0 10px;
         height: 140px;
@@ -318,6 +318,7 @@ footer a:hover {
     }
 
     .nav_menu {
+        grid-template-columns: 1fr;
         justify-content: center;
     }
 
@@ -342,6 +343,12 @@ footer a:hover {
         width: 80%;
         align-items: center;
         justify-content: center;
+    }
+
+    .fsIMGCon {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .fsTextType {
