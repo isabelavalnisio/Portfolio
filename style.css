@@ -55,7 +55,7 @@ body {
 
 .hn_logo {
     height: 100%;
-    width:max-content;
+    width: max-content;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -114,7 +114,6 @@ body {
 .firstSection {
     width: 100%;
     height: auto;
-    /* Changed from fixed height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,11 +256,13 @@ body {
 
 footer {
     text-align: center;
-    padding: 50px;
-    /* Adjusted for smaller screens */
+    padding: 5px;
     background-color: #ffffff;
     color: #474646;
-    position: relative;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     z-index: 2;
 }
 
@@ -306,6 +307,16 @@ footer a:hover {
 }
 
 /* Responsive Design */
+
+@media only screen and (min-width: 919px) {
+    .first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+}
+
 @media only screen and (max-width: 920px) {
     .header_navbar {
         padding: 0 10px;
@@ -359,12 +370,12 @@ footer a:hover {
     .fsTextWrap>p {
         width: 100%;
     }
-    
+
     .buttonCV {
         text-align: center;
     }
 
     footer {
-        padding: 15px;
+        padding: 5px;
     }
 }
