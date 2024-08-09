@@ -319,14 +319,16 @@ footer a:hover {
 
 @media only screen and (max-width: 920px) {
     .header_navbar {
-        padding: 0 8px;
+        padding: 0 3px;
         height: 70px;
     }
 
     .hn_wrap {
-        grid-template-columns: 1fr;
+        display:flex;
+        grid-template-columns: 1fr 1fr;
         text-align: center;
-        font-size: 7px;
+        font-size: 6.5px;
+        gap: 10px;
     }
 
     .nav_menu {
@@ -336,12 +338,12 @@ footer a:hover {
 
     .nav_menu ul {
         display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1px;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
     }
 
     .hnLink {
-        width: 88px;
+        width: 80px;
         height: 25px;
         display: inline-block;
     }
