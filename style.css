@@ -29,7 +29,6 @@ body {
 
 .header_navbar {
     width: 100%;
-    padding: 0 50px;
     position: sticky;
     background-color: #ffffff;
     top: 0;
@@ -422,7 +421,7 @@ footer a:hover {
     }
 
     .nav_menu>ul>li>a {
-        padding: 10px 50px;
+        padding: 10px ;
         color: #252525;
         transition: 0.3s linear;
         position: relative;
