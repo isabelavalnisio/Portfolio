@@ -405,7 +405,7 @@ footer a:hover {
         grid-template-columns: 1fr 1fr;
         text-align: center;
         font-size: 6.5px;
-        gap: 50px;
+        gap: 5px;
         justify-content: center;
         align-items: center;
     }
@@ -493,6 +493,6 @@ footer a:hover {
     }
 
     .about_main {
-        padding: 60px;
+        padding: 25px;
     }
 }
