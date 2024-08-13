@@ -82,7 +82,7 @@ body {
 
 .nav_menu>ul {
     display: flex;
-    gap: 30px;
+    gap: 5px;
 }
 
 .nav_menu>ul>li {
@@ -334,7 +334,7 @@ footer a:hover {
 
 /* Responsive Design */
 
-@media only screen and (min-width: 921px) {
+@media only screen and (min-width: 1150px) {
     .first {
         display: flex;
         justify-content: center;
@@ -343,8 +343,8 @@ footer a:hover {
     }
 
     .hnLink {
-        width: 120px;
-        height: 40px;
+        width: 130px;
+        height: 30px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -356,7 +356,7 @@ footer a:hover {
         color: #252525;
         transition: 0.3s linear;
         position: relative;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .nav_menu>ul>li>a.activeNH {
@@ -382,7 +382,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1149px) {
     .header_navbar {
         height: 70px;
         display: flex;
@@ -420,7 +420,7 @@ footer a:hover {
     }
 
     .hnLink {
-        width: 85px;
+        width: 90px;
         height: 25px;
         display: inline-block;
     }

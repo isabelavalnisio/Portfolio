@@ -19,23 +19,14 @@
     </div>
     <div id="main">
         <div class="header_navbar">
-            <div class="hn_wrap" id="navbar">
-                <a href="" class="hn_logo">
-                    <img src="assets/logo.png" alt="Logo" style="width: 60px; height: 60px;" />
-                    <h1>Isabela Valnisio</h1>
-                </a>
-                <div class="nav_menu">
-                    <ul>
-                        <li>
-                            <a href="https://nopeguy.github.io/websiteisa/" class="hnLink activeNH">HOME</a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="hnLink activeNH">PROJECTS</a>
-                        </li>
-                    </ul>
-                    </ul>
-                </div>
-            </div>
+            <div id="header-placeholder"></div>
+            <script>
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('header-placeholder').innerHTML = data;
+                    });
+            </script>
         </div>
         <div class="first">
             <div class="firstSection">
@@ -74,7 +65,8 @@
                     <div class="buttonCV">
                         <button type="button" id="dcvbtn">
                             <a href="https://github.com/NopeGuy/websiteisa/blob/main/assets/Isabela.Valnisio.CV.pdf?raw=true"
-                                download="Isabela_Andrade_CV" target="_blank" style="color: rgb(0, 0, 0);">Download CV</a>
+                                download="Isabela_Andrade_CV" target="_blank" style="color: rgb(0, 0, 0);">Download
+                                CV</a>
                         </button>
                     </div>
                 </div>
