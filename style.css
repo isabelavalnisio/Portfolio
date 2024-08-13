@@ -280,6 +280,12 @@ body {
     box-shadow: 4px 4px #252525;
 }
 
+.about_main {
+    z-index: 10;
+    color: #252525;
+    text-align: left;
+}
+
 footer {
     text-align: center;
     padding-top: 185px;
@@ -378,7 +384,11 @@ footer a:hover {
         gap: 20px;
         padding: 20px;
         justify-content: space-between;
-        align-items:flex-start;
+        align-items: flex-start;
+    }
+
+    .about_main {
+        padding: 200px;
     }
 }
 
@@ -480,5 +490,9 @@ footer a:hover {
         gap: 20px;
         padding: 20px;
         justify-content: center;
+    }
+
+    .about_main {
+        padding: 60px;
     }
 }
