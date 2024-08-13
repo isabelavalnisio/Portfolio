@@ -340,7 +340,7 @@ footer a:hover {
 
 /* Responsive Design */
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1040px) {
     .first {
         display: flex;
         justify-content: center;
@@ -392,7 +392,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width: 1149px) {
+@media only screen and (max-width: 1039px) {
     .header_navbar {
         height: 70px;
         display: flex;
@@ -405,7 +405,7 @@ footer a:hover {
         grid-template-columns: 1fr 1fr;
         text-align: center;
         font-size: 6.5px;
-        gap: 5px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
     }
