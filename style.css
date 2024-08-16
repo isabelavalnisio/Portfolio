@@ -347,6 +347,10 @@ footer a:hover {
         height: 70vh;
     }
 
+    .firstSection {
+        padding-left: 30px;
+    }
+
     .hnLink {
         width: 130px;
         height: 30px;
@@ -354,6 +358,15 @@ footer a:hover {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .hn_logo {
+        padding-left: 30px;
+        gap: 30px;
+    }
+
+    .hn_wrap {
+        padding-right: 20px;
     }
 
     .nav_menu>ul>li>a {
