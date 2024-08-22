@@ -236,6 +236,7 @@ body {
     margin-top: 20px;
     justify-content: center;
     z-index: 20;
+    padding-top: 40px;
 }
 
 .fsSMCon>a {
@@ -281,7 +282,10 @@ body {
 
 .about_main {
     position: relative;
-    padding: 5px;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    z-index: 40;    
 }
 
 .about_photo {
@@ -305,6 +309,7 @@ body {
 
 .contact_main{
     padding: 5px;
+    padding-top: 50px;
 }
 
 .contact_text{
@@ -391,6 +396,12 @@ footer a:hover {
         height: 70vh;
     }
 
+    .first_contact {
+        display: flex;
+        justify-content: center;
+        height: 70vh;
+    }
+
     .firstSection {
         padding-left: 30px;
     }
@@ -441,6 +452,52 @@ footer a:hover {
         padding: 20px;
         justify-content: space-between;
         align-items: flex-start;
+    }
+    
+    .contact_photo img {
+        width: 100%;
+        /* Make the image take the full width of its container */
+        height: auto;
+        /* Maintain the aspect ratio */
+        max-height: 200px;
+        /* Adjust the maximum height to reduce the image height */
+        display: block;
+        /* Ensure there's no inline spacing below the image */
+        margin-bottom: 20px;
+        /* Add some space between the image and the text */
+        object-fit: cover;
+        /* Ensures the image covers the area, cropping if necessary */
+        border-radius: 10px;
+        /* Optional: add rounded corners if desired */
+        z-index: 50;
+    }
+
+    .about_photo {
+        float:right;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding-left: 100px;
+        max-width: 400px;
+        z-index: 40;
+    }
+
+    .about_photo img {
+        padding-top: 10px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        z-index: 40;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #ffffff;
+        color: #474646;
+        position: static;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 40;
     }
 }
 
@@ -526,7 +583,7 @@ footer a:hover {
 
     footer {
         text-align: center;
-        padding-top: 90px;
+        padding-top: 140px;
         background-color: #ffffff;
         color: #474646;
         position: static;
@@ -553,7 +610,9 @@ footer a:hover {
     }
 
     .contact_text{
+        padding: 20px;
         padding-top: 1px;
+        font-size: 14px;
     }
 
     .contact_photo img {
@@ -581,5 +640,11 @@ footer a:hover {
         margin-top: 20px;
         justify-content: center;
         z-index: 20;
+    }
+
+    .about_main {
+        position: relative;
+        padding: 30px;
+        z-index: 40;
     }
 }
