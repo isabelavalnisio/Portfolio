@@ -232,16 +232,16 @@ body {
 
 .fsSMCon {
     display: flex;
-    gap: 15px;
+    gap: 45px;
     margin-top: 20px;
     justify-content: center;
     z-index: 20;
 }
 
 .fsSMCon>a {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
     color: #252525;
     display: flex;
     align-items: center;
@@ -280,9 +280,53 @@ body {
 }
 
 .about_main {
-    z-index: 10;
-    color: #252525;
-    text-align: left;
+    position: relative;
+    padding: 5px;
+}
+
+.about_photo {
+    float:right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 150px;
+    /* Adjust as needed */
+}
+
+.about_photo img {
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about_text {
+    text-align: justify;
+}
+
+.contact_main{
+    padding: 5px;
+}
+
+.contact_text{
+    padding-top: 40px;
+}
+
+.contact_photo img {
+    width: 100%;
+    /* Make the image take the full width of its container */
+    height: auto;
+    /* Maintain the aspect ratio */
+    max-height: 250px;
+    /* Adjust the maximum height to reduce the image height */
+    display: block;
+    /* Ensure there's no inline spacing below the image */
+    margin-bottom: 20px;
+    /* Add some space between the image and the text */
+    object-fit: cover;
+    /* Ensures the image covers the area, cropping if necessary */
+    border-radius: 10px;
+    /* Optional: add rounded corners if desired */
+    z-index: 40;
 }
 
 footer {
@@ -294,7 +338,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 40;
 }
 
 footer hr {
@@ -398,15 +442,11 @@ footer a:hover {
         justify-content: space-between;
         align-items: flex-start;
     }
-
-    .about_main {
-        padding: 200px;
-    }
 }
 
 @media only screen and (max-width: 1039px) {
     .header_navbar {
-        height: 70px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -438,7 +478,7 @@ footer a:hover {
         color: #252525;
         transition: 0.3s linear;
         position: relative;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .hnLink {
@@ -504,7 +544,42 @@ footer a:hover {
         justify-content: center;
     }
 
-    .about_main {
-        padding: 25px;
+    .gap {
+    padding: 90px;
+    }
+
+    .contact_main{
+        padding: 5px;
+    }
+
+    .contact_text{
+        padding-top: 1px;
+    }
+
+    .contact_photo img {
+        width: 100%;
+        /* Make the image take the full width of its container */
+        height: auto;
+        /* Maintain the aspect ratio */
+        max-height: 120px;
+        /* Adjust the maximum height to reduce the image height */
+        display: block;
+        /* Ensure there's no inline spacing below the image */
+        margin-bottom: 20px;
+        /* Add some space between the image and the text */
+        object-fit: cover;
+        /* Ensures the image covers the area, cropping if necessary */
+        border-radius: 10px;
+        /* Optional: add rounded corners if desired */
+        z-index: 40;
+    }
+
+    .fsSMCon {
+        display: flex;
+        gap: 45px;
+        padding-top: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        z-index: 20;
     }
 }
