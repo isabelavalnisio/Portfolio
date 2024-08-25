@@ -285,7 +285,7 @@ body {
     padding-top: 100px;
     padding-left: 200px;
     padding-right: 200px;
-    z-index: 40;    
+    z-index: 0;    
 }
 
 .about_photo {
@@ -515,7 +515,7 @@ footer a:hover {
         margin-bottom: 20px;
         padding-left: 100px;
         max-width: 400px;
-        z-index: 40;
+        z-index: 0;
     }
 
     .about_photo img {
@@ -523,7 +523,7 @@ footer a:hover {
         width: 100%;
         height: auto;
         object-fit: cover;
-        z-index: 40;
+        z-index: 0;
     }
 
     .spotify {
@@ -690,6 +690,6 @@ footer a:hover {
     .about_main {
         position: relative;
         padding: 30px;
-        z-index: 40;
+        z-index: 0;
     }
 }
