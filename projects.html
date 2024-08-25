@@ -37,42 +37,59 @@
                             <p>
                                 Explore os meus vários projetos, que abrangem diferentes áreas e disciplinas.
                             </p>
-                        <br>
+                            <br>
                         </div>
                         <div class="project-list">
                             <div class="project-item">
-                                <div>
-                                    <h2>Rádio Sintoniza-te [Data]</h2>
-                                    <p>[Melhorar] Rádio Universitária da Universidade católica de Braga.</p>
+                                <div class="project-content">
+                                    <h2>Rádio Sintoniza-te</h2>
+                                    <h3>Universidade Católica Portuguesa - Centro Regional de Braga</h3>
+                                    <p>Esta playlist no Spotify apresenta alguns dos programas que eu fiz enquanto Chefe
+                                        de Redação e locutora na Rádio
+                                        Sintoniza-te. Entre eles, estão programas de informação, de improvisação e de
+                                        entretenimento.</p>
                                 </div>
-                                <div class="spotify">
+                                <div class="audio-player">
                                     <iframe style="border-radius:12px"
                                         src="https://open.spotify.com/embed/playlist/0NpapurIotIxe9JQ39kW84?utm_source=generator&theme=0"
                                         width="100%" height="80" frameBorder="0" allowfullscreen=""
                                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                                         loading="lazy"></iframe>
                                 </div>
+                            </div><br>
+                            <div class="project-item">
+                                <div class="project-content">
+                                    <h2>Rádio Antena Minho</h2>
+                                    <h3>Estágio Curricular</h3>
+                                    <p>Durante dois meses, realizei o estágio curricular na Rádio Antena Minho, onde
+                                        participei na programação, no noticiário,
+                                        em reportagens e agendas culturais.</p>
                                 </div>
-                                <div class="project-item">
-                                    <br>
-                                    <h2>Rádio Antena Minho - 2024</h2>
-                                    <p>Estágio curricular realizado com duração de dois meses.</p>
-                                </div>
-                                <div id="audio-player">
+                                <div class="audio-player">
                                     <audio id="audio" controls>
                                         <source id="audio-source" src="audio/track1.wav" type="audio/wav">
                                         Your browser does not support the audio element.
                                     </audio>
-                                    <div id="playlist">
+                                    <div id="playlist" class="scrollable-playlist">
                                         <ul>
-                                            <li onclick="playAudio('audio/Yupuma_reportagem-180724.wav')">Track 1 -
-                                                Title</li>
-                                            <li onclick="playAudio('audio/track2.wav')">Track 2 - Title</li>
-                                            <li onclick="playAudio('audio/track3.wav')">Track 3 - Title</li>
-                                            <!-- Adiciona mais faixas conforme necessário -->
+                                            <li onclick="playAudio('audio/Rendez_Vous_reportagem-170724.wav')">Reportagem Rendez Vous</li>
+                                            <li onclick="playAudio('audio/Yupuma_reportagem-180724.wav')">Reportagem Filme Yupuma</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-190724.wav')">Agenda Cultural - 19/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-230724.wav')">Agenda Cultural - 23/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-240724.wav')">Agenda Cultural - 24/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-250724.wav')">Agenda Cultural - 25/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-260724.wav')">Agenda Cultural - 26/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-290724.wav')">Agenda Cultural - 29/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-300724.wav')">Agenda Cultural - 30/07/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-020824.wav')">Agenda Cultural - 02/08/24</li>
+                                            <li onclick="playAudio('audio/Agenda_Cultural_Reportagem-050824.wav')">Agenda Cultural - 05/08/24</li>
+                                            <li onclick="playAudio('audio/Reportagem_Paredes_de_Coura-120824.wav')">Reportagem Pardes De Coura</li>
+                                            <li onclick="playAudio('audio/PEÇA_eleições-130824.mp3')">Peça Eleitoral</li>
+                                            <li onclick="playAudio('audio/reportagem_praias_fluviais-240824.mp3')">Reportagem Praias Fluviais</li>
                                         </ul>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

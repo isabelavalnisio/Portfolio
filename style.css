@@ -127,7 +127,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -10;
+    z-index: 0;
 }
 
 .fsTextWrap {
@@ -338,6 +338,31 @@ body {
     z-index: 50;
 }
 
+.scrollable-playlist {
+    max-height: 200px;
+    /* Define a altura máxima do contêiner */
+    overflow-y: auto;
+    /* Permite o scroll vertical se o conteúdo exceder a altura */
+    padding-right: 10px;
+    /* Adiciona um pequeno espaço à direita para o scrollbar */
+}
+
+.scrollable-playlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scrollable-playlist ul li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.scrollable-playlist ul li:hover {
+    background-color: #f0f0f0;
+}
+
 footer {
     text-align: center;
     padding-top: 185px;
@@ -452,12 +477,20 @@ footer a:hover {
 
     .project-item {
         display: flex;
-        gap: 20px;
-        padding: 20px;
+        gap: 60px;
+        padding: 60px;
         justify-content: space-between;
         align-items: flex-start;
     }
-    
+
+    .project-content {
+        width: 60%;
+    }
+
+    .audio-player {
+        width: 40%;
+    }
+
     .contact_photo img {
         width: 100%;
         /* Make the image take the full width of its container */
@@ -494,6 +527,10 @@ footer a:hover {
     }
 
     .spotify {
+        padding-top: 40px;
+    }
+
+    .audio-player{
         padding-top: 40px;
     }
 
@@ -604,7 +641,7 @@ footer a:hover {
     .project-item {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        gap: 40px;
         padding: 20px;
         justify-content: center;
     }
