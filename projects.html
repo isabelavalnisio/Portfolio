@@ -33,25 +33,45 @@
                 <div class="fsWrap">
                     <div class="" fsText" id="particles-js">
                         <div class="fsTextWrap">
-                            <h1>Here are some of my notable works</h1>
+                            <h1>Aqui estão alguns dos meus trabalhos notáveis</h1>
                             <p>
-                                Browse through my various projects, spanning different domains and disciplines.
+                                Explore os meus vários projetos, que abrangem diferentes áreas e disciplinas.
                             </p>
                         </div>
                         <div class="project-list">
                             <div class="project-item">
                                 <div>
-                                    <h2>Project Title 1</h2>
-                                    <p>Description of the first project.</p>
+                                    <h2>Rádio Sintoniza-te [Data]</h2>
+                                    <p>[Melhorar] Rádio Universitária da Universidade católica de Braga.</p>
                                 </div>
-                                <button class="project-button">View Project</button>
-                            </div>
-                            <div class="project-item">
-                                <div>
-                                    <h2>Project Title 2</h2>
-                                    <p>Description of the second project.</p>
+                                <div class="spotify">
+                                    <iframe style="border-radius:12px"
+                                        src="https://open.spotify.com/embed/playlist/0NpapurIotIxe9JQ39kW84?utm_source=generator&theme=0"
+                                        width="100%" height="80" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
                                 </div>
-                                <button class="project-button">View Project</button>
+                                </div>
+                                <div class="project-item">
+                                    <br>
+                                    <h2>Rádio Antena Minho - 2024</h2>
+                                    <p>Estágio curricular realizado com duração de dois meses.</p>
+                                </div>
+                                <div id="audio-player">
+                                    <audio id="audio" controls>
+                                        <source id="audio-source" src="audio/track1.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <div id="playlist">
+                                        <ul>
+                                            <li onclick="playAudio('audio/Yupuma_reportagem-180724.wav')">Track 1 -
+                                                Title</li>
+                                            <li onclick="playAudio('audio/track2.wav')">Track 2 - Title</li>
+                                            <li onclick="playAudio('audio/track3.wav')">Track 3 - Title</li>
+                                            <!-- Adiciona mais faixas conforme necessário -->
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,7 +86,15 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/particles.js"></script>
         <script src="scripts/script.js"></script>
-
+        <script>
+            function playAudio(src) {
+                var audio = document.getElementById("audio");
+                var source = document.getElementById("audio-source");
+                source.src = src;
+                audio.load();
+                audio.play();
+            }
+        </script>
 </body>
 
 </html>
