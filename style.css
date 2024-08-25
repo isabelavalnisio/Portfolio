@@ -538,6 +538,12 @@ footer a:hover {
         padding-top: 300px;
         font-size: larger;
     }
+    
+    audio {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
 
     footer {
         text-align: center;
