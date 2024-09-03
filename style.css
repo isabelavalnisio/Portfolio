@@ -11,9 +11,8 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     font-family: "Poppins", sans-serif;
-    color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -25,13 +24,19 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #000000;
+    background-color: #f3f3f3;
+}
+
+#main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .header_navbar {
     width: 100%;
     position: sticky;
-    background-color: #141414;
+    background-color: #ffffff;
     top: 0;
     z-index: 999;
 }
@@ -50,7 +55,7 @@ body {
     border: 2px solid #252525;
     box-shadow: 4px 4px #252525;
     padding: 0 15px;
-    background-color: #000000;
+    background-color: #f3f3f3;
 }
 
 .hn_logo {
@@ -75,7 +80,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #141414;
+    background-color: #ffffff;
     padding-top: 5px;
     gap: 20px;
 }
@@ -124,7 +129,6 @@ body {
     gap: 100px;
 }
 
-
 #particles-js>canvas {
     position: absolute;
     bottom: 0;
@@ -170,7 +174,7 @@ body {
 
 .fsTextType {
     position: relative;
-    color: #c2c2c2;
+    color: #252525;
     font-size: 2rem;
     /* Adjusted size for smaller screens */
 }
@@ -182,7 +186,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
     ;
     border-left: 10px solid #252525;
     animation: animate 4s steps(12) infinite;
@@ -282,22 +286,16 @@ body {
     box-shadow: 4px 4px #252525;
 }
 
-#main {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-}
-
 .about_main {
     position: relative;
     padding-top: 100px;
     padding-left: 200px;
     padding-right: 200px;
-    z-index: 0;    
+    z-index: 0;
 }
 
 .about_photo {
-    float:right;
+    float: right;
     margin-left: 20px;
     margin-bottom: 20px;
     max-width: 150px;
@@ -315,12 +313,12 @@ body {
     text-align: justify;
 }
 
-.contact_main{
+.contact_main {
     padding: 5px;
     padding-top: 50px;
 }
 
-.contact_text{
+.contact_text {
     padding-top: 40px;
 }
 
@@ -373,7 +371,7 @@ body {
 
 footer {
     text-align: center;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #474646;
     position: static;
     bottom: 0;
@@ -532,7 +530,7 @@ footer a:hover {
     }
 
     .about_photo {
-        float:right;
+        float: right;
         margin-left: 20px;
         margin-bottom: 20px;
         padding-left: 100px;
@@ -552,16 +550,16 @@ footer a:hover {
         padding-top: 40px;
     }
 
-    .audio-player{
+    .audio-player {
         padding-top: 40px;
     }
 
-    .project-text{
+    .project-text {
         display: solid;
         padding-top: 1200px;
         font-size: larger;
     }
-    
+
     audio {
         width: 100%;
         border-radius: 8px;
@@ -570,7 +568,7 @@ footer a:hover {
 
     footer {
         text-align: center;
-        background-color: #000000;
+        background-color: #ffffff;
         color: #474646;
         position: static;
         bottom: 0;
@@ -578,7 +576,7 @@ footer a:hover {
         width: 100%;
         z-index: 40;
     }
-    
+
     .andfooter {
         display: grid;
         padding-top: 450px;
@@ -623,7 +621,7 @@ footer a:hover {
     }
 
     .nav_menu>ul>li>a {
-        padding: 10px ;
+        padding: 10px;
         color: #252525;
         transition: 0.3s linear;
         position: relative;
@@ -676,7 +674,7 @@ footer a:hover {
     footer {
         text-align: center;
         padding-top: 140px;
-        background-color: #000000;
+        background-color: #ffffff;
         color: #474646;
         position: static;
         bottom: 0;
@@ -694,14 +692,14 @@ footer a:hover {
     }
 
     .gap {
-    padding: 90px;
+        padding: 90px;
     }
 
-    .contact_main{
+    .contact_main {
         padding: 5px;
     }
 
-    .contact_text{
+    .contact_text {
         padding: 20px;
         padding-top: 1px;
         font-size: 14px;
