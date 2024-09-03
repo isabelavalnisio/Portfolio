@@ -11,8 +11,9 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #000000;
     font-family: "Poppins", sans-serif;
+    color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -24,13 +25,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f3f3f3;
+    background-color: #000000;
 }
 
 .header_navbar {
     width: 100%;
     position: sticky;
-    background-color: #ffffff;
+    background-color: #141414;
     top: 0;
     z-index: 999;
 }
@@ -49,7 +50,7 @@ body {
     border: 2px solid #252525;
     box-shadow: 4px 4px #252525;
     padding: 0 15px;
-    background-color: #f3f3f3;
+    background-color: #000000;
 }
 
 .hn_logo {
@@ -74,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #ffffff;
+    background-color: #141414;
     padding-top: 5px;
     gap: 20px;
 }
@@ -123,6 +124,7 @@ body {
     gap: 100px;
 }
 
+
 #particles-js>canvas {
     position: absolute;
     bottom: 0;
@@ -168,7 +170,7 @@ body {
 
 .fsTextType {
     position: relative;
-    color: #252525;
+    color: #c2c2c2;
     font-size: 2rem;
     /* Adjusted size for smaller screens */
 }
@@ -180,7 +182,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #000000;
     ;
     border-left: 10px solid #252525;
     animation: animate 4s steps(12) infinite;
@@ -280,6 +282,12 @@ body {
     box-shadow: 4px 4px #252525;
 }
 
+#main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
 .about_main {
     position: relative;
     padding-top: 100px;
@@ -365,8 +373,7 @@ body {
 
 footer {
     text-align: center;
-    padding-top: 185px;
-    background-color: #ffffff;
+    background-color: #000000;
     color: #474646;
     position: static;
     bottom: 0;
@@ -563,7 +570,7 @@ footer a:hover {
 
     footer {
         text-align: center;
-        background-color: #ffffff;
+        background-color: #000000;
         color: #474646;
         position: static;
         bottom: 0;
@@ -669,7 +676,7 @@ footer a:hover {
     footer {
         text-align: center;
         padding-top: 140px;
-        background-color: #ffffff;
+        background-color: #000000;
         color: #474646;
         position: static;
         bottom: 0;
