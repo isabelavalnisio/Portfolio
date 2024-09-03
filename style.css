@@ -573,7 +573,7 @@ footer a:hover {
     
     .andfooter {
         display: grid;
-        padding-top: 400px;
+        padding-top: 470px;
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         gap: 20px;
         justify-items: center;
