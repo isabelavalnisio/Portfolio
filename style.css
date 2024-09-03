@@ -339,7 +339,7 @@ body {
 }
 
 .scrollable-playlist {
-    max-height: 200px;
+    max-height: 150px;
     /* Define a altura máxima do contêiner */
     overflow-y: auto;
     /* Permite o scroll vertical se o conteúdo exceder a altura */
@@ -423,6 +423,13 @@ footer a:hover {
     align-items: center;
 }
 
+.pdf-shower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 /* Responsive Design */
 
 @media only screen and (min-width: 1040px) {
@@ -486,7 +493,7 @@ footer a:hover {
     .project-item {
         display: flex;
         gap: 60px;
-        padding: 60px;
+        padding: 20px;
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -543,7 +550,7 @@ footer a:hover {
     }
 
     .project-text{
-        padding-top: 600px;
+        padding-top: 300px;
         font-size: larger;
     }
     
@@ -562,6 +569,19 @@ footer a:hover {
         left: 0;
         width: 100%;
         z-index: 40;
+    }
+    
+    .andfooter {
+        display: grid;
+        padding-top: 400px;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .pdf-shower {
+        padding-left: 700px;
     }
 }
 
