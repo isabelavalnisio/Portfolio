@@ -550,7 +550,8 @@ footer a:hover {
     }
 
     .project-text{
-        padding-top: 300px;
+        display: solid;
+        padding-top: 470px;
         font-size: larger;
     }
     
@@ -573,7 +574,7 @@ footer a:hover {
     
     .andfooter {
         display: grid;
-        padding-top: 470px;
+        padding-top: 450px;
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         gap: 20px;
         justify-items: center;
