@@ -119,14 +119,21 @@ body {
 }
 
 .firstSection {
+    position: relative;
     width: 100%;
     height: auto;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     padding-top: 1px;
-    gap: 100px;
+    gap: 100px;padding: 20px;
+        /* Adiciona algum padding para espaçamento interno */
+        z-index: 1;
+        /* Garante que o conteúdo fique acima das partículas */
+        background-color: transparent;
+        /* Assegura que o fundo seja transparente para as partículas serem visíveis */
 }
 
 #particles-js>canvas {
@@ -282,6 +289,12 @@ body {
     text-decoration: none;
 }
 
+.project-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-button:hover {
     box-shadow: 4px 4px #252525;
 }
@@ -291,7 +304,6 @@ body {
     padding-top: 100px;
     padding-left: 200px;
     padding-right: 200px;
-    z-index: 0;
 }
 
 .about_photo {
@@ -588,6 +600,10 @@ footer a:hover {
 
     .pdf-shower {
         padding-left: 700px;
+    }
+
+    .project-image{
+        padding-right: 110px;
     }
 }
 
